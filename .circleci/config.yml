@@ -9,7 +9,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
-      - run: ./mvnw deploy
+      - run: mvn deploy
 
 workflows:
   build-then-test:
