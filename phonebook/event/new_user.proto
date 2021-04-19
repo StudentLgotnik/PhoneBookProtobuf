@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package phonebook.event;
+
+option java_multiple_files = false;
+option java_package = "com.example.phonebook.event";
+option java_outer_classname = "NewUser";
+
+message NewUserEvent {
+
+  string login = 1;
+  string email = 2;
+  string phone = 3;
+
+}
