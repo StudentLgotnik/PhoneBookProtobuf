@@ -23,9 +23,9 @@ jobs:
 workflows:
   build-then-test:
     jobs:
-      - build
-        filters:
-          branches:
-            only:
-              - master
       - test
+      - build
+          filters:
+            branches:
+              only:
+               - master
